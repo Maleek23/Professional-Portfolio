@@ -2193,3 +2193,23 @@ footer {
 .tech-stack-box:hover {
     border: 1px solid rgba(0, 212, 255, 0.6) !important;
 }
+
+/* Remove black background from back to top button - just show glowing text */
+#backtotopbutton {
+    background: none !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+#backtotopbutton article {
+    text-shadow: 0 0 20px rgba(0, 212, 255, 0.8),
+                 0 0 40px rgba(157, 78, 221, 0.6),
+                 0 0 60px rgba(0, 212, 255, 0.4) !important;
+}
+
+#backtotopbutton:hover article {
+    text-shadow: 0 0 30px rgba(0, 212, 255, 1),
+                 0 0 60px rgba(157, 78, 221, 0.8),
+                 0 0 90px rgba(0, 212, 255, 0.6) !important;
+}
