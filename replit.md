@@ -57,6 +57,18 @@ This is a personal portfolio website for Abdulmalik Ajisegiri, a Model Risk Engi
 - ✅ Animations working
 - ✅ Responsive design active
 
+## UI/UX Improvements (October 19, 2025)
+- **Darker/Futuristic Color Scheme**:
+  - Background: #0a0a0f (darker black)
+  - Accent colors: #00d4ff (cyan), #9d4edd (purple)
+  - Enhanced visual hierarchy with cyan glow effects
+- **Optimized Image Sizing**:
+  - Navbar avatar: 50×50px circular with cyan glow
+  - About section photo: 280×280px with soft shadow
+  - Footer avatar: 180×180px circular with cyan glow
+- **Section IDs added**: Certifications and Honors sections now have anchor links
+- **Consistent iconography**: Emojis used throughout for visual consistency
+
 ## Recent Changes (October 19, 2025)
 - Initial Replit setup
 - Created Node.js server to serve static files
@@ -72,6 +84,15 @@ This is a personal portfolio website for Abdulmalik Ajisegiri, a Model Risk Engi
   - Updated resume PDF link to Abdulmalik-Ajisegiri-Resume.pdf
   - Updated footer and console messages
   - Updated README.md with new information
+- **LinkedIn Profile Integration (October 19, 2025)**:
+  - Added personal photo (malik-photo.jpg) to About section and footer
+  - Added custom avatar (nav-avatar.png) to navbar
+  - Added phone number (346) 297-8021 to footer contact section
+  - Updated About section with compelling LinkedIn summary intro
+  - Added new Certifications section (CISA, MATLAB Certified, Bloomberg Market Concepts, Simulink Onramp)
+  - Added Honors & Awards section (Maverick Academic CSE Scholarship, Next Gen Leaders Scholarship)
+  - Added Pareto.AI Financial Engineer project card (DCF/LBO modeling for LLM training)
+  - Integrated current roles: DTCC Model Risk Engineer, Pareto.AI Financial Engineer, OU Graduate RA/TA, Leekshotit Studios Founder
 
 ## Developer Notes
 - The website uses CDN-hosted libraries (AOS, Google Fonts)
@@ -79,15 +100,31 @@ This is a personal portfolio website for Abdulmalik Ajisegiri, a Model Risk Engi
 - Custom animations and interactions are all vanilla JavaScript
 - Mobile-responsive with hamburger menu
 - Resume PDF located at: src/pdf/Abdulmalik-Ajisegiri-Resume.pdf
-- Contact: abdulmalikajisegiri@gmail.com
-- LinkedIn: https://www.linkedin.com/in/malikajisegiri
-- GitHub: https://github.com/Maleek23
+- Personal photo: src/png/malik-photo.jpg (About section & footer)
+- Navbar avatar: src/png/nav-avatar.png
+- Contact: 
+  - Email: abdulmalikajisegiri@gmail.com
+  - Phone: (346) 297-8021
+  - LinkedIn: https://www.linkedin.com/in/malikajisegiri
+  - GitHub: https://github.com/Maleek23
 
-## Next Steps (Optional Customization)
-- **Add Personal Photos**: Replace emoji placeholders with actual photos:
-  - Navbar logo: Update the briefcase emoji (💼) in line 70 of index.html
-  - About section photo: Replace the developer emoji (👨‍💻) in the About section
-  - Footer avatar: Replace the target emoji (🎯) in the footer
-  - Recommended to add images to `src/png/` or `src/webp/` directories
-- **Add Project Screenshots**: Replace gradient placeholders in Projects section with actual project images
+## Portfolio Sections
+1. **Home**: Hero section with name, title, and animated text
+2. **About**: Personal introduction with photo, LinkedIn summary, and resume download
+3. **Skills**: Tech stack showcase (Python, MATLAB, SQL, PyTorch, TensorFlow, AWS, Docker, etc.)
+4. **Certifications**: Professional certifications (CISA, MATLAB, Bloomberg, Simulink)
+5. **Honors & Awards**: Academic achievements and scholarships
+6. **Projects**: 
+   - Pareto.AI - Financial Engineering (DCF/LBO models for LLM training)
+   - GenAI Risk-Bench Model (LLM validation framework)
+   - Metaheuristic Search Framework (SA, GA, PSO algorithms)
+   - RF Command Test Harness (Collins Aerospace automation)
+   - NIST CSF Risk Assessment (Deloitte security project)
+7. **Footer**: Contact info, social media links, and avatar
+
+## Next Steps (Optional Future Enhancements)
+- **Add Project Screenshots**: Replace gradient placeholders in Projects section with actual project screenshots
 - **Customize Colors**: Modify color scheme in style.css if desired
+- **Add More Projects**: Expand portfolio with additional work from LinkedIn experience
+- **Add Blog/Publications Section**: If applicable, showcase technical writing or research
+- **Deploy to Production**: Use Replit's deployment feature to publish the portfolio live

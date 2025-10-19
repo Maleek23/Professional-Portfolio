@@ -87,19 +87,19 @@ html {
 
 :root {
     cursor: default;
-    --color-white: #fff;
+    --color-white: #e0e0e0;
     --color-black: #000;
-    --color-dark-mode: #11111b;
+    --color-dark-mode: #0a0a0f;
     --color-light-mode: #ece7e1;
-    --color-ddd-color: #ddd;
-    --color-gray: #c4c4c4;
-    --color-purple: #8000ff;
-    --color-light-purple: #cf59e6;
-    --color-light-blue: #6bc5f8;
-    --color-navbarBorder-dark: #e2e2e207;
-    --color-shadowDark: rgba(0, 0, 0, 0.137);
-    --static-heading-gradient-blue: #b0f3f1;
-    --static-heading-gradient-pink: #ffcfdf;
+    --color-ddd-color: #b0b0b0;
+    --color-gray: #808080;
+    --color-purple: #6b00cc;
+    --color-light-purple: #9d4edd;
+    --color-light-blue: #00d4ff;
+    --color-navbarBorder-dark: #1a1a2e33;
+    --color-shadowDark: rgba(0, 0, 0, 0.5);
+    --static-heading-gradient-blue: #00d4ff;
+    --static-heading-gradient-pink: #9d4edd;
     --tech-stack-box-first-color: #1a1a29;
     --tech-stack-box-second-color: rgba(27, 27, 40, 0);
     --tech-stack-box-border-color: #292929
@@ -487,8 +487,12 @@ noscript {
 }
 
 .logo-top img {
-    height: 100%;
-    z-index: 2
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 2;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
 }
 
 .face {
@@ -974,10 +978,17 @@ noscript {
     gap: 10px
 }
 
-.dp img,
+.dp img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 212, 255, 0.2);
+}
+
 .dp::after,
 .dp::before {
-    width: 300px
+    width: 280px
 }
 
 .projects-heading-article,
@@ -1477,12 +1488,22 @@ footer {
 }
 
 .footer-avatar-container {
-    width: 220px;
+    width: 180px;
+    height: 180px;
     margin-top: 20px;
     position: relative;
     display: flex;
-    align-items: flex-end;
-    justify-content: center
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+}
+
+.footer-avatar-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .footer-avatar-img {
