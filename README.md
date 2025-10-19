@@ -1,30 +1,30 @@
-# <a href="https://vinodjangid07.github.io/" target="_blank">My Portfolio</a>
-<p align="justify">This website displays my Projects, Web presence, Story, Work experience, and contact information.</p>
+# Abdulmalik Ajisegiri - Portfolio
 
-[![Repository Status](https://img.shields.io/badge/Repository%20Status-Maintained-dark%20green.svg)](https://github.com/vinodjangid07/vinodjangid07.github.io)
-[![Website Status](https://img.shields.io/badge/Website%20Status-Online-green)](https://vinodjangid07.github.io/)
-[![Author](https://img.shields.io/badge/Author-Vinod%20Jangid-purple.svg)](https://www.instagram.com/its_.me._vinod?igshid=YmMyMTA2MsY%3D)
-[![Latest Release](https://img.shields.io/badge/Latest%20Release-11%20Jan%202024-yellow.svg)](https://github.com/vinodjangid07/vinodjangid07.github.io)
-<a href="https://github.com/vinodjangid07/vinodjangid07.github.io/blob/master/LICENSE"><img alt="License" src="http://img.shields.io/:license-mit-blue.svg?style=flat-square?style=flat-square" /></a>
+<p align="justify">This website showcases my projects, technical expertise, professional experience, and contact information as a Model Risk Engineer and AI/ML Specialist.</p>
 
-<img width="100%" alt="Portfolio Screenshot" src="https://github.com/vinodjangid07/vinodjangid07.github.io/assets/86096184/fd0d70b2-1505-4adf-8b0c-427df58607e3">
+[![Author](https://img.shields.io/badge/Author-Abdulmalik%20Ajisegiri-purple.svg)](https://www.linkedin.com/in/malikajisegiri)
+[![GitHub](https://img.shields.io/badge/GitHub-Maleek23-blue.svg)](https://github.com/Maleek23)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 
 
 :star: Star me on GitHub — it helps!
 
 # Sections 📚
 
-✔️ Mini intro\
-✔️ About me \
-✔️ Skills\
-✔️ Projects\
-✔️ Contact me
+✔️ Introduction - Model Risk Engineer & AI/ML Specialist\
+✔️ About Me - Background in risk analytics and systems engineering\
+✔️ Skills - AI/ML, Python, Risk Analytics, Systems Engineering\
+✔️ Projects - GenAI Risk-Bench, Metaheuristic Search, RF Test Harness\
+✔️ Contact - LinkedIn, GitHub, Email
 
-## Installation & Deployment 📦
-- Clone the repository and modify the content of <b>index.html</b> according to your requirement.
-- ⚠️ Remove my Bitmoji <img src="https://github.com/vinodjangid07/vinodjangid07.github.io/assets/86096184/05e5b2d6-8b38-4cf9-a5a3-eb63e81aab1d" width="20px"> from the navbar/footer and use yours instead.⚠️
-- Add or remove images from `https://www.vinodjangid.me/src/` directory as per your requirement.
-- ⚠️<b>NOTE:</b> Make sure to remove `analyticsId` & `google search console Id` from `<head>` tag, and set yours, if you want to use your own Google Analytics & search console account.⚠️
+## About This Portfolio
+
+This portfolio website showcases:
+- **Professional Experience**: Model Risk Engineer at DTCC, Software Systems R&D Engineer at Collins Aerospace, Cyber Risk Intern at Deloitte
+- **Education**: MS in Systems Engineering (University of Oklahoma), BS in Computer Engineering (UT Arlington)
+- **Technical Skills**: AI/ML model validation, Python, MATLAB, Risk Analytics, LLM evaluation
+- **Projects**: GenAI Risk-Bench Model, Metaheuristic Search Framework, RF Command Test Harness, NIST CSF Risk Assessment
+- **Certifications**: CISA, MATLAB Certified, Simulink Certified
 
 
 ## License 📄
@@ -36,4 +36,8 @@ This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE)
 * [<b>Animista</b>](https://animista.net/) - To use Interactive animations
 
 
-Please contact me at infovinodjangid@gmail.com if you have any feedback for the website. :star: Star it, if you like it!
+Please contact me at abdulmalikajisegiri@gmail.com for professional inquiries or collaboration opportunities.
+
+Connect with me:
+- LinkedIn: [linkedin.com/in/malikajisegiri](https://www.linkedin.com/in/malikajisegiri)
+- GitHub: [github.com/Maleek23](https://github.com/Maleek23)
