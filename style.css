@@ -2038,3 +2038,149 @@ footer {
         margin-top: 100px;  
     }
 }
+/* ==================== ILLUMINATING GLOW EFFECTS ==================== */
+
+/* Tech Stack Box Glow */
+.tech-stack-box {
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.3),
+                0 0 40px rgba(157, 78, 221, 0.2),
+                inset 0 0 30px rgba(0, 212, 255, 0.05);
+    transition: all 0.3s ease;
+    border-color: rgba(0, 212, 255, 0.3);
+}
+
+.tech-stack-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.6),
+                0 0 60px rgba(157, 78, 221, 0.4),
+                0 0 90px rgba(0, 212, 255, 0.2),
+                inset 0 0 40px rgba(0, 212, 255, 0.1);
+    border-color: #00d4ff;
+}
+
+.tech-stack-box img {
+    filter: drop-shadow(0 0 10px rgba(0, 212, 255, 0.4));
+    transition: filter 0.3s ease;
+}
+
+.tech-stack-box:hover img {
+    filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.8))
+            drop-shadow(0 0 30px rgba(157, 78, 221, 0.6));
+}
+
+/* Section Headings Glow */
+.section-heading-article,
+.projects-heading-article,
+.skills-heading-article {
+    text-shadow: 0 0 20px rgba(0, 212, 255, 0.5),
+                 0 0 40px rgba(157, 78, 221, 0.3),
+                 0 0 60px rgba(0, 212, 255, 0.2);
+}
+
+/* Main Name Heading Glow */
+.name {
+    text-shadow: 0 0 30px rgba(0, 212, 255, 0.6),
+                 0 0 60px rgba(157, 78, 221, 0.4),
+                 0 0 90px rgba(0, 212, 255, 0.3);
+}
+
+/* Project Box Glow */
+.project-box {
+    box-shadow: 0 0 25px rgba(0, 212, 255, 0.25),
+                0 0 50px rgba(157, 78, 221, 0.15);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.project-box:hover {
+    box-shadow: 0 0 40px rgba(0, 212, 255, 0.4),
+                0 0 80px rgba(157, 78, 221, 0.3),
+                0 0 120px rgba(0, 212, 255, 0.2);
+    border-color: rgba(0, 212, 255, 0.5);
+    transform: translateY(-5px);
+}
+
+/* Navbar Avatar Glow */
+.navbar .logo img {
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.6),
+                0 0 30px rgba(157, 78, 221, 0.4);
+}
+
+/* About Photo Glow */
+.dp img {
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.4),
+                0 0 60px rgba(157, 78, 221, 0.3);
+}
+
+/* Footer Avatar Glow Enhancement */
+.footer-img-div img {
+    box-shadow: 0 0 25px rgba(0, 212, 255, 0.5),
+                0 0 50px rgba(157, 78, 221, 0.3);
+}
+
+/* Button Glow */
+.resume-btn {
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.3),
+                0 0 40px rgba(157, 78, 221, 0.2);
+    transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.6),
+                0 0 60px rgba(157, 78, 221, 0.4),
+                0 0 90px rgba(0, 212, 255, 0.2);
+}
+
+/* Navbar Links Glow on Active */
+.navbar-tabs-ul li.activeThistab a {
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.8),
+                 0 0 20px rgba(157, 78, 221, 0.6);
+}
+
+/* Tooltip Glow */
+.tooltip {
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.4),
+                0 0 30px rgba(157, 78, 221, 0.3);
+}
+
+/* Animated Glow Pulse for Name */
+@keyframes glowPulse {
+    0%, 100% {
+        text-shadow: 0 0 30px rgba(0, 212, 255, 0.6),
+                     0 0 60px rgba(157, 78, 221, 0.4),
+                     0 0 90px rgba(0, 212, 255, 0.3);
+    }
+    50% {
+        text-shadow: 0 0 40px rgba(0, 212, 255, 0.8),
+                     0 0 80px rgba(157, 78, 221, 0.6),
+                     0 0 120px rgba(0, 212, 255, 0.5);
+    }
+}
+
+.name {
+    animation: glowPulse 3s ease-in-out infinite;
+}
+
+/* Social Media Icons Glow */
+.footer-social-media-logos svg,
+.github-redirect svg {
+    filter: drop-shadow(0 0 5px rgba(0, 212, 255, 0.4));
+    transition: filter 0.3s ease;
+}
+
+.footer-social-media-logos svg:hover,
+.github-redirect svg:hover {
+    filter: drop-shadow(0 0 15px rgba(0, 212, 255, 0.8))
+            drop-shadow(0 0 25px rgba(157, 78, 221, 0.6));
+}
+
+/* Back to Top Button Glow */
+#backtotopbutton {
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.4),
+                0 0 40px rgba(157, 78, 221, 0.3);
+}
+
+#backtotopbutton:hover {
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.7),
+                0 0 60px rgba(157, 78, 221, 0.5);
+}

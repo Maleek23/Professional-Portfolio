@@ -67,7 +67,20 @@ This is a personal portfolio website for Abdulmalik Ajisegiri, a Model Risk Engi
   - About section photo: 280×280px with soft shadow
   - Footer avatar: 180×180px circular with cyan glow
 - **Section IDs added**: Certifications and Honors sections now have anchor links
-- **Consistent iconography**: Emojis used throughout for visual consistency
+- **Professional Tech Stack Logos**: 
+  - Replaced all emoji icons with transparent PNG logos for 13 technologies
+  - Custom generated logos: Python, MATLAB, SQL, TypeScript, PyTorch, TensorFlow, Hugging Face, LangChain, Tableau, Power BI, AWS, Docker, Jupyter
+  - All logos stored in src/png/ directory
+- **Illuminating Glow Effects**:
+  - Tech stack boxes: Multi-layer cyan/purple glow with hover amplification
+  - Name heading: Animated pulsing glow effect
+  - Section headings: Triple-layer text shadow glow
+  - Project cards: Glowing borders with hover effects
+  - All avatars: Enhanced cyan glow halos
+  - Buttons: Illuminating glow on hover
+  - Social icons: Drop-shadow glow effects
+  - Navigation: Active link glow indicators
+  - Back to top button: Glowing effect
 
 ## Recent Changes (October 19, 2025)
 - Initial Replit setup
