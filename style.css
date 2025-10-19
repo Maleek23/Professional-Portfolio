@@ -2184,3 +2184,12 @@ footer {
     box-shadow: 0 0 30px rgba(0, 212, 255, 0.7),
                 0 0 60px rgba(157, 78, 221, 0.5);
 }
+
+/* Remove black borders from tech stack boxes */
+.tech-stack-box {
+    border: 1px solid rgba(0, 212, 255, 0.2) !important;
+}
+
+.tech-stack-box:hover {
+    border: 1px solid rgba(0, 212, 255, 0.6) !important;
+}
