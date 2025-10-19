@@ -1137,7 +1137,7 @@ noscript {
 
 .tooltip {
     position: absolute;
-    top: -20px;
+    top: -60px;
     opacity: 0;
     background: linear-gradient(to bottom right, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
     border: 1px solid var(--tech-stack-box-border-color);
