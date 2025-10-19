@@ -2213,3 +2213,296 @@ footer {
                  0 0 60px rgba(157, 78, 221, 0.8),
                  0 0 90px rgba(0, 212, 255, 0.6) !important;
 }
+
+/* ==================== UI/UX ENHANCEMENTS ==================== */
+
+/* Animated gradient background overlay */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at top, rgba(0, 212, 255, 0.05) 0%, transparent 50%),
+                radial-gradient(ellipse at bottom, rgba(157, 78, 221, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Animated grid pattern background */
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+    z-index: -1;
+    animation: gridMove 20s linear infinite;
+}
+
+@keyframes gridMove {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(50px, 50px);
+    }
+}
+
+/* Enhanced section headings with better hierarchy */
+.section-heading-article,
+.projects-heading-article,
+.skills-heading-article {
+    font-size: 4rem !important;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #00d4ff 0%, #9d4edd 50%, #00d4ff 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradientFlow 3s ease infinite;
+}
+
+@keyframes gradientFlow {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Section description text enhancement */
+.sectionHeadingP,
+.projectsHeadingP,
+.skillsHeadingP {
+    font-size: 1.8rem;
+    color: rgba(224, 224, 224, 0.7);
+    margin-top: 1rem;
+    letter-spacing: 1px;
+}
+
+/* Enhanced tech stack box with depth */
+.tech-stack-box {
+    background: linear-gradient(135deg, 
+                rgba(26, 26, 41, 0.8) 0%, 
+                rgba(27, 27, 40, 0.4) 100%) !important;
+    backdrop-filter: blur(10px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.tech-stack-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+                transparent, 
+                rgba(0, 212, 255, 0.1), 
+                transparent);
+    transition: left 0.5s;
+}
+
+.tech-stack-box:hover::before {
+    left: 100%;
+}
+
+.tech-stack-box:hover {
+    transform: translateY(-10px) scale(1.05) !important;
+}
+
+/* Enhanced project cards with gradient borders */
+.project-box {
+    position: relative;
+    background: linear-gradient(135deg, 
+                rgba(26, 26, 41, 0.9) 0%, 
+                rgba(27, 27, 40, 0.6) 100%) !important;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+
+.project-box::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, 
+                #00d4ff, 
+                #9d4edd, 
+                #00d4ff, 
+                #9d4edd);
+    background-size: 400% 400%;
+    border-radius: 32px;
+    z-index: -1;
+    animation: borderGlow 3s ease infinite;
+    opacity: 0.5;
+}
+
+@keyframes borderGlow {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+.project-box:hover::before {
+    opacity: 1;
+}
+
+/* Smooth entrance animations for sections */
+section {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Enhanced button hover effects */
+.resume-btn {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, 
+                rgba(0, 212, 255, 0.1) 0%, 
+                rgba(157, 78, 221, 0.1) 100%);
+    border: 2px solid rgba(0, 212, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.resume-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(0, 212, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.resume-btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.resume-btn:hover {
+    border-color: rgba(0, 212, 255, 0.8);
+    transform: translateY(-3px);
+}
+
+/* Enhanced tooltip */
+.tooltip {
+    background: linear-gradient(135deg, 
+                rgba(0, 212, 255, 0.2) 0%, 
+                rgba(157, 78, 221, 0.2) 100%) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(0, 212, 255, 0.4) !important;
+    padding: 8px 16px !important;
+    font-size: 1.4rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 1px !important;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+/* Enhanced spacing for better breathing room */
+section {
+    padding: 80px 0 !important;
+}
+
+.section-heading {
+    margin-bottom: 60px !important;
+}
+
+/* Floating animation for avatars */
+.dp img,
+.footer-img-div img,
+.navbar .logo img {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Enhanced navbar with backdrop blur */
+.navbar {
+    backdrop-filter: blur(20px) !important;
+    background: rgba(10, 10, 15, 0.8) !important;
+    border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+}
+
+/* Stagger animation for tech stack items */
+.tech-stack-box:nth-child(1) { animation-delay: 0.1s; }
+.tech-stack-box:nth-child(2) { animation-delay: 0.2s; }
+.tech-stack-box:nth-child(3) { animation-delay: 0.3s; }
+.tech-stack-box:nth-child(4) { animation-delay: 0.4s; }
+.tech-stack-box:nth-child(5) { animation-delay: 0.5s; }
+.tech-stack-box:nth-child(6) { animation-delay: 0.6s; }
+.tech-stack-box:nth-child(7) { animation-delay: 0.7s; }
+.tech-stack-box:nth-child(8) { animation-delay: 0.8s; }
+
+/* Enhanced footer */
+footer {
+    background: linear-gradient(to top, 
+                rgba(10, 10, 15, 1) 0%, 
+                rgba(10, 10, 15, 0.8) 100%);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(0, 212, 255, 0.2) !important;
+}
+
+/* Smooth image loading */
+img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+/* Enhanced focus states for accessibility */
+a:focus,
+button:focus {
+    outline: 2px solid rgba(0, 212, 255, 0.6);
+    outline-offset: 4px;
+}
+
+/* Cursor enhancement */
+* {
+    cursor: default;
+}
+
+a, button, .clickable {
+    cursor: pointer !important;
+}
