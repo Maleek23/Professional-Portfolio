@@ -2506,3 +2506,98 @@ button:focus {
 a, button, .clickable {
     cursor: pointer !important;
 }
+
+/* ==================== ACCESSIBILITY & PERFORMANCE OPTIMIZATIONS ==================== */
+
+/* Respect user's motion preferences - disable animations for sensitive users */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    body::after {
+        animation: none !important;
+    }
+    
+    .name {
+        animation: none !important;
+    }
+    
+    .dp img,
+    .footer-img-div img,
+    .navbar .logo img {
+        animation: none !important;
+    }
+    
+    .section-heading-article,
+    .projects-heading-article,
+    .skills-heading-article {
+        animation: none !important;
+    }
+}
+
+/* Allow text selection for better UX and accessibility */
+body,
+p,
+h1, h2, h3, h4, h5, h6,
+span,
+article,
+.info-div {
+    -webkit-user-select: text !important;
+    -moz-user-select: text !important;
+    -ms-user-select: text !important;
+    user-select: text !important;
+}
+
+/* GPU acceleration for smooth animations */
+.tech-stack-box,
+.project-box,
+.dp img,
+.footer-img-div img,
+.navbar .logo img {
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+/* Optimize animation performance */
+@media (prefers-reduced-motion: no-preference) {
+    body::after {
+        will-change: transform;
+    }
+}
+
+/* Better scroll performance */
+section {
+    will-change: scroll-position;
+}
+
+/* Reduce animation complexity on mobile for better performance */
+@media screen and (max-width: 768px) {
+    body::after {
+        animation-duration: 40s !important;
+    }
+    
+    .tech-stack-box:hover {
+        transform: translateY(-5px) scale(1.02) !important;
+    }
+    
+    .project-box::before {
+        animation-duration: 5s !important;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .tech-stack-box {
+        border: 2px solid rgba(0, 212, 255, 0.8) !important;
+    }
+    
+    .tooltip {
+        border: 2px solid rgba(0, 212, 255, 0.9) !important;
+    }
+}
